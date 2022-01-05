@@ -1,0 +1,34 @@
+import { BridgeObjectWithId } from '../BridgeObjectWithId';
+import { RuleCondition } from './conditions/RuleCondition';
+import { BridgeAction } from '../actions/BridgeAction';
+import { RuleConditionPayload } from './conditions/index';
+import { BridgeActionPayload } from '../actions/index';
+import { LooseObject } from '../../AttributeObject';
+export declare class Rule extends BridgeObjectWithId {
+    private _conditions;
+    private _actions;
+    constructor(id?: string);
+    get name(): string;
+    set name(value: string);
+    get created(): string;
+    get owner(): string;
+    get lasttriggered(): string;
+    get timestriggered(): string;
+    get status(): string;
+    set recycle(val: boolean);
+    get recycle(): boolean;
+    get conditions(): RuleCondition[];
+    addCondition(condition: RuleConditionPayload): Rule;
+    removeConditionAt(idx: number): void;
+    resetConditions(): void;
+    get actions(): BridgeAction[];
+    addAction(action: BridgeActionPayload): Rule;
+    removeActionAt(idx: number): void;
+    resetActions(): void;
+    getConditionsPayload(): object[];
+    getActionsPayload(): object[];
+    toStringDetailed(): string;
+    _populate(data: LooseObject): this;
+    getHuePayload(): import("../BridgeObject").BridgeObjectHueData;
+    getJsonPayload(): import("../BridgeObject").BridgeObjectJsonData;
+}

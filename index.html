@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-sport lys</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo-elvebakken.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
+    <script>    
+    
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+</head>
+
+<body>
+    
+    <button onclick="turnOnLight(true)">On</button>
+    <button onclick="turnOnLight(false)">Off</button>
+    <button onclick="lightBlink()">Blink</button>
+    <button onclick="lightBlinkOnce(1)">BlinkOnce</button>
+    <button onclick="alternateBlink()">alternateBlink</button>
+    <button onclick="lightLoop(colorloop)">Color Loop</button>
+    <button onclick="lightPolice()">Police</button>
+
+    <button onclick="lightIdAll()">all</button>
+    <button onclick="lightId1()">Id 1</button>
+    <button onclick="lightId2()">Id 2</button>
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    
+    <input id="briSlider" onchange="lightBri()"type="range" min="0" max="254" value="127" class="slider">
+    <input id="satSlider" onchange="lightSat()"type="range" min="0" max="254" value="254" class="slider">
+    <input id="ctSlider" onchange="lightCt()"type="range" min="153" max="500" value="327" class="slider">
+    
+ 
+ 
+
+    
+
+    <div id="colorSpec">
+        <input id="hueSlider" onchange="lightHue()" type="range" min="0" max="65535" value="30000">
+        <input id="mySlider2" type="range" step="1" min="100" max="100" value="100" style="display: none;">
+        <input id="mySlider3" type="range" step="1" min="50" max="50" value="50" style="display: none;">
+      </div>
+      <div id="colorBox" style="width: 100px; height: 100px;"></div>
+
+      
+
+
+    <script src="/lys javascript/lightHandler.js"></script>
+    <script src="/lys javascript/lightHue.js"></script>
+    <script src="/lys javascript/lightBlink.js"></script>
+    <script src="/lys javascript/lightBri.js"></script>
+    <script src="/lys javascript/lightSat.js"></script>
+    <script src="/lys javascript/lightLoop.js"></script>
+    <script src="/lys javascript/lightCt.js"></script>
+    <script src="/lys javascript/lightPolice.js"></script>
+    <script src="/lys javascript/lightId.js"></script>
+
+
+    <script src="script.js"></script>
+   
+
+
+
+
+
+
+
+    <div class="wrap">
+      <div class="half">
+        <div class="colorPicker"></div>
+      </div>
+
+    </div>
+
+
+
+</body>
+
+
+</html>

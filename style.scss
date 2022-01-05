@@ -1,0 +1,48 @@
+body {
+    color: #fff;
+    background: #171F30;
+    line-height: 150%;
+  }
+  
+  .wrapper svg {
+  }
+  
+  .wrap {
+    min-height: 100vh;
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    .half {
+      width: 50%;
+      padding: 32px 0;
+    }
+  }
+  
+  .title {
+    font-family: sans-serif;
+    line-height: 24px;
+    display: block;
+    padding: 8px 0;
+  }
+  
+  .readout {
+    margin-top: 32px;
+    line-height: 180%;
+  }
+  
+  #values {
+   font-family: monospace;
+    line-height: 150%;
+  }
+  
+  .link {
+    margin-top: 16px;
+    
+    a {
+      color: MediumSlateBlue;
+    }
+  }
