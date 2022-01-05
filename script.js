@@ -19,35 +19,28 @@ var colorPicker = new iro.ColorPicker("#picker", {
 var colorPicker = new iro.ColorPicker(".colorPicker", {
   // color picker options
   // Option guide: https://iro.js.org/guide.html#color-picker-options
-  width: 280,
+  width: 200,
   color: "rgb(255, 0, 0)",
   borderWidth: 1,
-  borderColor: "#fff",
+  borderColor: "#000",
 });
 
-var values = document.getElementById("values");
-var hexInput = document.getElementById("hexInput");
+
+
 
 // https://iro.js.org/guide.html#color-picker-events
 // listen to a color picker's color:change event
 // color:change callbacks receive the current color
 colorPicker.on('color:change', function(color) {
   // log the current color as a HEX string
-  console.log(color.hexString);
+  console.log(color.hslString);
 });
 
 colorPicker.on(["color:init", "color:change"], function(color){
   // Show the current color in different formats
   // Using the selected color: https://iro.js.org/guide.html#selected-color-api
-  colorPicker.color.hsl = { h: 180, s: 100, l: 50 };
+  colorPicker.color.hsl = { h: 180, s: 100, l:100 };
   
-  values.innerHTML = [
-    "hex: " + color.hexString,
-    "rgb: " + color.rgbString,
-    "hsl: " + color.hslString,
-  ].join("<br>");
-  
-  hexInput.value = color.hexString;
 });
 
 hexInput.addEventListener('change', function() {
