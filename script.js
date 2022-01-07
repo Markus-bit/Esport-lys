@@ -13,44 +13,69 @@ update();
 
 
 
-var colorPicker = new iro.ColorPicker("#picker", {
-  // Set the size of the color picker
-  width: 320,
-  // Set the initial color to pure red
-  color: "#f00"
-});
 
-var colorPicker = new iro.ColorPicker(".colorPicker", {
-  // color picker options
-  // Option guide: https://iro.js.org/guide.html#color-picker-options
-  width: 280,
+// It's all sliders
+var sliderPicker = new iro.ColorPicker("#sliderPicker", {
+  width: 250,
   color: "rgb(255, 0, 0)",
   borderWidth: 1,
-  borderColor: "#000",
+  borderColor: "#fff",
+  layout: [
+    {
+      component: iro.ui.Slider,
+      options: {
+        sliderType: 'hue'
+      }
+    },
+    {
+      component: iro.ui.Slider,
+      options: {
+        sliderType: 'saturation'
+      }
+    },
+    {
+      component: iro.ui.Slider,
+      options: {
+        sliderType: 'value'
+      }
+    },
+    {
+      component: iro.ui.Slider,
+      options: {
+        sliderType: 'kelvin'
+      }
+    },
+  ]
 });
 
-var values = document.getElementById("values");
-var hexInput = document.getElementById("hexInput");
-
-// https://iro.js.org/guide.html#color-picker-events
-// listen to a color picker's color:change event
-// color:change callbacks receive the current color
-colorPicker.on('color:change', function(color) {
-  // log the current color as a hsl string
-  console.log(color.hslString);
+// Temperature
+var kelvinPicker = new iro.ColorPicker("#kelvinPicker", {
+  width: 250,
+  color: "rgb(255, 0, 0)",
+  borderWidth: 1,
+  borderColor: "#fff",
+  layoutDirection: 'vertical',
+  layout: [
+    {
+      component: iro.ui.Slider,
+      options: {
+        sliderType: 'kelvin',
+        sliderSize: 40,
+      }
+    },
+  ]
 });
 
-colorPicker.on(["color:init", "color:change"], function(color){
-  // Show the current color in different formats
-  // Using the selected color: https://iro.js.org/guide.html#selected-color-api
-  colorPicker.color.hsl = { h: 180, s: 100, l: 50 };
-  
-  values.innerHTML = [
-    "hex: " + color.hexString,
-    "rgb: " + color.rgbString,
-    "hsl: " + color.hslString,
-  ].join("<br>");
-  
-  hexInput.value = color.hexString;
+// Wheel only
+var wheelPicker = new iro.ColorPicker("#wheelPicker", {
+  width: 250,
+  color: "rgb(255, 0, 0)",
+  borderWidth: 1,
+  borderColor: "#fff",
+  layout: [
+    {
+      component: iro.ui.Wheel,
+    },
+  ]
 });
 
