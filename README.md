@@ -2,4 +2,4 @@
 
 Dette er en nettside som vil bli brukt for å styre LED-lysene på E-sport rommet
 
-laget av Markus, 
+laget av Markus, Kardo og 
