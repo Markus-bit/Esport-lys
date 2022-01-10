@@ -79,3 +79,13 @@ var wheelPicker = new iro.ColorPicker("#wheelPicker", {
   ]
 });
 
+// listen to a color picker's color:change event
+// color:change callbacks receive the current color
+wheelPicker.on('color:change', function(color) {
+  // log the current color as a hsl string
+  console.log(color.hslString);
+});
+
+
+
+
