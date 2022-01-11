@@ -68,7 +68,7 @@ var kelvinPicker = new iro.ColorPicker("#kelvinPicker", {
 
 // Wheel only
 var wheelPicker = new iro.ColorPicker("#wheelPicker", {
-  width: 250,
+  width: 200,
   color: "rgb(255, 0, 0)",
   borderWidth: 1,
   borderColor: "#fff",
