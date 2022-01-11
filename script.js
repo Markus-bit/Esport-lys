@@ -39,12 +39,7 @@ var sliderPicker = new iro.ColorPicker("#sliderPicker", {
         sliderType: 'value'
       }
     },
-    {
-      component: iro.ui.Slider,
-      options: {
-        sliderType: 'kelvin'
-      }
-    },
+    
   ]
 });
 
