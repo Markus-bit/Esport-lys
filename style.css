@@ -17,6 +17,7 @@ h3{
     border-image: 0;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -49,3 +50,11 @@ h3{
 
 
 
+=======
+#layout{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+>>>>>>> a3a874fdafcd9874f8ef12151764c72799cbe44d
