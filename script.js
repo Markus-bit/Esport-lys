@@ -81,7 +81,7 @@ var wheelPicker = new iro.ColorPicker("#wheelPicker", {
 
 // listen to a color picker's color:change event
 // color:change callbacks receive the current color
-wheelPicker.on('color:change', function(color) {
+wheelPicker.on('input:end', function(color) {
   var url = "http://172.31.0.25/api/79Y4mxDr-5WMo46map5qewHqa-SD8WHyZyqK2GUf/groups/1/action";
 
   var xhr = new XMLHttpRequest();
@@ -96,11 +96,13 @@ wheelPicker.on('color:change', function(color) {
   }};
 
   var hue = color.hsl.h*182
-  var data = {"hue": hue}
-  console.log(data)
+  var sat = ((Math.abs(color.hsl.l-100))*5)
+  console.log(sat)
+  var data = {"hue": hue, "sat": sat}
+  //console.log(data)
   xhr.send(JSON.stringify(data));
   // log the current color as a hsl string
-  console.log(color.hsl.h);
+  //console.log(color.hsl.h);
 });
 
 
