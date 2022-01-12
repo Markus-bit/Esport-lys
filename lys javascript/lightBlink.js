@@ -45,16 +45,3 @@ function sleep(milliseconds) {
   } while (currentDate - date < milliseconds);
 }
 
-function alternateBlink(){
-   i = 1;
-   while (i<10){
-    lightBlinkOnce(1)
-    sleep(500);
-    lightBlinkOnce(2)
-    sleep(500);
-    i = i + 1   
-   }
-        
-
- 
-}
