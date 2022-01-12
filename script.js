@@ -39,12 +39,7 @@ var sliderPicker = new iro.ColorPicker("#sliderPicker", {
         sliderType: 'value'
       }
     },
-    {
-      component: iro.ui.Slider,
-      options: {
-        sliderType: 'kelvin'
-      }
-    },
+    
   ]
 });
 
@@ -68,7 +63,7 @@ var kelvinPicker = new iro.ColorPicker("#kelvinPicker", {
 
 // Wheel only
 var wheelPicker = new iro.ColorPicker("#wheelPicker", {
-  width: 250,
+  width: 200,
   color: "rgb(255, 0, 0)",
   borderWidth: 1,
   borderColor: "#fff",
@@ -78,4 +73,14 @@ var wheelPicker = new iro.ColorPicker("#wheelPicker", {
     },
   ]
 });
+
+// listen to a color picker's color:change event
+// color:change callbacks receive the current color
+wheelPicker.on('color:change', function(color) {
+  // log the current color as a hsl string
+  console.log(color.hslString);
+});
+
+
+
 
