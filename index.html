@@ -18,7 +18,7 @@
 </head>
 
     <body onload="lightIdNone();">
-    
+
     <button onclick="turnOnLight(true)">On</button>
     <button onclick="turnOnLight(false)">Off</button>
     <button onclick="lightBlink()">Blink</button>
@@ -32,6 +32,7 @@
     <button onclick="lightId2()">Id 2</button>
     <button onclick="lightId3()">Id 3</button>
     <button onclick="lightId4()">Id 4</button>
+    <button onclick="openNav()">sidenav</button>
     <label class="switch">
         <input type="checkbox">
         <span class="slider round"></span>
@@ -46,18 +47,10 @@
 
     
 
-    <div id="colorSpec">
-        <input id="hueSlider" onchange="lightHue()" type="range" min="0" max="65535" value="30000">
-        <input id="mySlider2" type="range" step="1" min="100" max="100" value="100" style="display: none;">
-        <input id="mySlider3" type="range" step="1" min="50" max="50" value="50" style="display: none;">
-      </div>
-      <div id="colorBox" style="width: 100px; height: 100px;"></div>
-
-      
+    
 
 
     <script src="/lys javascript/lightHandler.js"></script>
-    <script src="/lys javascript/lightHue.js"></script>
     <script src="/lys javascript/lightBlink.js"></script>
     <script src="/lys javascript/lightBri.js"></script>
     <script src="/lys javascript/lightSat.js"></script>
@@ -65,10 +58,11 @@
     <script src="/lys javascript/lightCt.js"></script>
     <script src="/lys javascript/lightPolice.js"></script>
     <script src="/lys javascript/lightId.js"></script>
-
-
+   
+    <script src="sidenav.js"></script>
     <script src="script.js"></script>
    
+    <img id="layout" src="Esport-layout.png">
 
 
 
@@ -76,11 +70,14 @@
 
 
 
+<<<<<<< HEAD
     
 
     </div>
+=======
+>>>>>>> 8c9ec6e1a6afaf444b14a277aa091df43f9c4487
 
-    <div class="Wrap">
+    <div id="sideNav">
       <div class="ColorPicker" id="wheelPicker">
         <h3>BIG WHEEL</h3>
       </div>

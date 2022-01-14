@@ -1,7 +1,4 @@
 
-
-
-
 update = () => {
   let hsl = `hsl(${hueSlider.value/(4369/24)||0}, ${mySlider2.value||0}%,${mySlider3.value||0}%)`;
   colorBox.style.backgroundColor = hsl;
@@ -11,8 +8,6 @@ hueSlider.addEventListener("input", update);
 mySlider2.addEventListener("input", update);
 mySlider3.addEventListener("input", update);
 update();
-
-
 
 // Temperature
 var kelvinPicker = new iro.ColorPicker("#kelvinPicker", {
