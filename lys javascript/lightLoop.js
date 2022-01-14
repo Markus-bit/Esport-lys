@@ -13,9 +13,10 @@ function lightLoop(){
     }};
     
  
-     var data = "{\"effect\": \"colorloop\"}"
+     var data = "{\"effect\":\"colorloop\"}"
     
     xhr.send(JSON.stringify(data));
+    console.log(data)
     }
 
 

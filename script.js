@@ -1,7 +1,4 @@
 
-
-
-
 update = () => {
   let hsl = `hsl(${hueSlider.value/(4369/24)||0}, ${mySlider2.value||0}%,${mySlider3.value||0}%)`;
   colorBox.style.backgroundColor = hsl;
@@ -11,41 +8,6 @@ hueSlider.addEventListener("input", update);
 mySlider2.addEventListener("input", update);
 mySlider3.addEventListener("input", update);
 update();
-
-
-
-
-
-
-
-// It's all sliders
-var sliderPicker = new iro.ColorPicker("#sliderPicker", {
-  width: 250,
-  color: "rgb(255, 0, 0)",
-  borderWidth: 1,
-  borderColor: "#fff",
-  layout: [
-    {
-      component: iro.ui.Slider,
-      options: {
-        sliderType: 'hue'
-      }
-    },
-    {
-      component: iro.ui.Slider,
-      options: {
-        sliderType: 'saturation'
-      }
-    },
-    {
-      component: iro.ui.Slider,
-      options: {
-        sliderType: 'value'
-      }
-    },
-    
-  ]
-});
 
 // Temperature
 var kelvinPicker = new iro.ColorPicker("#kelvinPicker", {
@@ -64,11 +26,15 @@ var kelvinPicker = new iro.ColorPicker("#kelvinPicker", {
     },
   ]
 });
+kelvinPicker.on('input:end', function(kelvin) {
+  ct=kelvin.kelvin*0.069
+  console.log(kelvin.kelvin)
 
+});
 
 // Wheel only
 var wheelPicker = new iro.ColorPicker("#wheelPicker", {
-  width: 200,
+  width: 300,
   color: "rgb(255, 0, 0)",
   borderWidth: 1,
   borderColor: "#fff",
@@ -97,6 +63,7 @@ wheelPicker.on('input:end', function(color) {
 
   var hue = color.hsl.h*182
   var sat = ((Math.abs(color.hsl.l-100))*5)
+  console.log(hue)
   console.log(sat)
   var data = {"hue": hue, "sat": sat}
   //console.log(data)
