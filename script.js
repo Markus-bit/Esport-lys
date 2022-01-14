@@ -14,39 +14,6 @@ update();
 
 
 
-
-
-
-
-// It's all sliders
-var sliderPicker = new iro.ColorPicker("#sliderPicker", {
-  width: 250,
-  color: "rgb(255, 0, 0)",
-  borderWidth: 1,
-  borderColor: "#fff",
-  layout: [
-    {
-      component: iro.ui.Slider,
-      options: {
-        sliderType: 'hue'
-      }
-    },
-    {
-      component: iro.ui.Slider,
-      options: {
-        sliderType: 'saturation'
-      }
-    },
-    {
-      component: iro.ui.Slider,
-      options: {
-        sliderType: 'value'
-      }
-    },
-    
-  ]
-});
-
 // Temperature
 var kelvinPicker = new iro.ColorPicker("#kelvinPicker", {
   width: 250,
@@ -64,11 +31,15 @@ var kelvinPicker = new iro.ColorPicker("#kelvinPicker", {
     },
   ]
 });
+kelvinPicker.on('input:end', function(kelvin) {
+  ct=kelvin.kelvin*0.069
+  console.log(kelvin.kelvin)
 
+});
 
 // Wheel only
 var wheelPicker = new iro.ColorPicker("#wheelPicker", {
-  width: 200,
+  width: 300,
   color: "rgb(255, 0, 0)",
   borderWidth: 1,
   borderColor: "#fff",
@@ -97,6 +68,7 @@ wheelPicker.on('input:end', function(color) {
 
   var hue = color.hsl.h*182
   var sat = ((Math.abs(color.hsl.l-100))*5)
+  console.log(hue)
   console.log(sat)
   var data = {"hue": hue, "sat": sat}
   //console.log(data)
