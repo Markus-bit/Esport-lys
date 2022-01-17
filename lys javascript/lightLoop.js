@@ -1,5 +1,5 @@
-function lightLoop(){
-    var url = "http://172.31.0.25/api/79Y4mxDr-5WMo46map5qewHqa-SD8WHyZyqK2GUf/groups/1/action";
+function lightLoop(effect){
+    var url = "http://10.58.177.121/api/79Y4mxDr-5WMo46map5qewHqa-SD8WHyZyqK2GUf/groups/1/action";
 
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", url);
@@ -13,10 +13,11 @@ function lightLoop(){
     }};
     
  
-     var data = "{\"effect\":\"colorloop\"}"
+     var data = "{\"effect\":"+ effect +"}"
     
-    xhr.send(JSON.stringify(data));
     console.log(data)
+    xhr.send(JSON.stringify(data));
+    
     }
 
 

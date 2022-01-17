@@ -1,6 +1,6 @@
 
 function lightId1(){
-    var url = "http://172.31.0.25/api/79Y4mxDr-5WMo46map5qewHqa-SD8WHyZyqK2GUf/groups/1";
+    var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
 
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", url);
@@ -34,7 +34,7 @@ function lightId1(){
     }
 
 function lightId2(){
-    var url = "http://172.31.0.25/api/79Y4mxDr-5WMo46map5qewHqa-SD8WHyZyqK2GUf/groups/1";
+    var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
 
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", url);
@@ -69,7 +69,7 @@ function lightId2(){
 
 
     function lightId3(){
-        var url = "http://172.31.0.25/api/79Y4mxDr-5WMo46map5qewHqa-SD8WHyZyqK2GUf/groups/1";
+        var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
     
         var xhr = new XMLHttpRequest();
         xhr.open("PUT", url);
@@ -104,7 +104,7 @@ function lightId2(){
 
 
         function lightId4(){
-            var url = "http://172.31.0.25/api/79Y4mxDr-5WMo46map5qewHqa-SD8WHyZyqK2GUf/groups/1";
+            var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
         
             var xhr = new XMLHttpRequest();
             xhr.open("PUT", url);
@@ -139,7 +139,7 @@ function lightId2(){
 
 
 function lightIdAll(){
-    var url = "http://172.31.0.25/api/79Y4mxDr-5WMo46map5qewHqa-SD8WHyZyqK2GUf/groups/1";
+    var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
 
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", url);
@@ -168,6 +168,7 @@ function lightIdAll(){
     if (id4 == -1) {
         lightIds.push("\"4\"")
     }
+   
     console.log(lightIds); 
 
     let text = lightIds.toString();
@@ -181,7 +182,7 @@ function lightIdAll(){
     }
 
 function lightIdNone(){
-    var url = "http://172.31.0.25/api/79Y4mxDr-5WMo46map5qewHqa-SD8WHyZyqK2GUf/groups/1";
+    var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
 
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", url);

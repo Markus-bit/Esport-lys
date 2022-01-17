@@ -21,7 +21,7 @@ function lightPolice(){
 
 
 
-    var url = "http://172.31.0.25/api/79Y4mxDr-5WMo46map5qewHqa-SD8WHyZyqK2GUf/lights/2/state";
+    var url = "http://10.58.177.121/api/79Y4mxDr-5WMo46map5qewHqa-SD8WHyZyqK2GUf/lights/2/state";
 
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", url);
@@ -43,7 +43,7 @@ function lightPolice(){
 
 
 
-    var url = "http://172.31.0.25/api/79Y4mxDr-5WMo46map5qewHqa-SD8WHyZyqK2GUf/lights/3/state";
+    var url = "http://10.58.177.121/api/79Y4mxDr-5WMo46map5qewHqa-SD8WHyZyqK2GUf/lights/3/state";
 
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", url);
@@ -66,7 +66,7 @@ function lightPolice(){
 
 
 
-    var url = "http://172.31.0.25/api/79Y4mxDr-5WMo46map5qewHqa-SD8WHyZyqK2GUf/lights/4/state";
+    var url = "http://10.58.177.121/api/79Y4mxDr-5WMo46map5qewHqa-SD8WHyZyqK2GUf/lights/4/state";
 
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", url);
