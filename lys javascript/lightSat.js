@@ -1,5 +1,5 @@
 function lightSat(){
-    var url = "http://172.31.0.25/api/79Y4mxDr-5WMo46map5qewHqa-SD8WHyZyqK2GUf/groups/1/action";
+    var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1/action";
 
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", url);
