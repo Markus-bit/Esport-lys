@@ -13,17 +13,18 @@ function lightId1(){
             console.log(xhr.responseText);
     }};
 
-    const index = lightIds.indexOf("\"1\"");
-    if (index > -1) {
-    lightIds.splice(index, 1);
+    const index1 = lightIds.indexOf("\"1\"");
+    if (index1 > -1) {
+        lightIds.splice(index1, 1);
     } else{
         lightIds.push("\"1\"")
-    }
+    }   
+
     console.log(lightIds); 
 
     let text = lightIds.toString();
     console.log(text);
-
+    
     var dataString = "{\"lights\":[" +text+ "]}"
 
     console.log(dataString)
@@ -206,7 +207,39 @@ function lightId2(){
                     
                     }
 
-
+function lightId7(){
+    var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
+                    
+    var xhr = new XMLHttpRequest();
+    xhr.open("PUT", url);
+                    
+    xhr.setRequestHeader("Content-Type", "application/json");
+                    
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            console.log(xhr.status);
+            console.log(xhr.responseText);
+     }};
+                    
+    const index = lightIds.indexOf("\"7\"");
+        if (index > -1) {
+        lightIds.splice(index, 1);
+         } else{
+            lightIds.push("\"7\"")
+        }
+        console.log(lightIds); 
+                    
+        let text = lightIds.toString();
+        console.log(text);
+                    
+        var dataString = "{\"lights\":[" +text+ "]}"
+                    
+        console.log(dataString)
+                    
+        xhr.send(dataString);
+                    
+                        
+        }
 
 
                         
@@ -253,7 +286,10 @@ function lightId2(){
     if (id6 == -1) {
         lightIds.push("\"6\"")
     }
-
+    const id7 = lightIds.indexOf("\"7\"");
+    if (id7 == -1) {
+        lightIds.push("\"7\"")
+    }
 
 
     console.log(lightIds); 
