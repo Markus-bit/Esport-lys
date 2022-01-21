@@ -13,13 +13,20 @@ function lightId1(){
             console.log(xhr.responseText);
     }};
 
-    const index1 = lightIds.indexOf("\"1\"");
-    if (index1 > -1) {
-        lightIds.splice(index1, 1);
-    } else{
-        lightIds.push("\"1\"")
-    }   
-
+    const id1 = lightIds.indexOf("\"1\"");
+    if (id1 == -1) {
+        lightIds.push("\"1\"");
+    }
+    else{
+        lightIds.splice(id1, 1);
+    }
+    const id2 = lightIds.indexOf("\"2\"");
+    if (id2 == -1) {
+        lightIds.push("\"2\"");
+    }
+    else{
+        lightIds.splice(id2, 1);
+    }
     console.log(lightIds); 
 
     let text = lightIds.toString();
@@ -48,11 +55,19 @@ function lightId2(){
             console.log(xhr.responseText);
     }};
 
-    const index = lightIds.indexOf("\"2\"");
-    if (index > -1) {
-    lightIds.splice(index, 1);
-    } else{
-        lightIds.push("\"2\"")
+    const id3 = lightIds.indexOf("\"3\"");
+    if (id3 == -1) {
+        lightIds.push("\"3\"");
+    }
+    else{
+        lightIds.splice(id3, 1);
+    }
+    const id4 = lightIds.indexOf("\"4\"");
+    if (id4 == -1) {
+        lightIds.push("\"4\"");
+    }
+    else{
+        lightIds.splice(id4, 1);
     }
     console.log(lightIds); 
 
@@ -68,7 +83,7 @@ function lightId2(){
     
     }
 
-
+    
     function lightId3(){
         var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
     
