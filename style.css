@@ -45,3 +45,14 @@ h3{
     top:200px;
     display: none;
 }
+
+
+.bildeKnapp{
+    width:370px;
+    height:160px;
+    z-index:3;
+    top:425px;
+    left:425px;
+    position: absolute;
+    cursor: pointer;
+}
