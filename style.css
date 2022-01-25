@@ -47,12 +47,47 @@ h3{
 }
 
 
-.bildeKnapp{
-    width:370px;
+#bildeKnappId1{
+    width:360px;
     height:160px;
     z-index:3;
     top:425px;
     left:425px;
     position: absolute;
     cursor: pointer;
+    background-color: red;
+}
+
+
+#bildeKnappId2{
+    width:360px;
+    height:150px;
+    z-index:3;
+    top:270px;
+    left:425px;
+    position: absolute;
+    cursor: pointer;
+    background-color: blue;
+}
+
+#bildeKnappId3{
+    width:250px;
+    height:150px;
+    z-index:3;
+    top:270px;
+    left:790px;
+    position: absolute;
+    cursor: pointer;
+    background-color: green;
+}
+
+#bildeKnappId4{
+    width:250px;
+    height:150px;
+    z-index:3;
+    top:425px;
+    left:790px;
+    position: absolute;
+    cursor: pointer;
+    background-color: yellow;
 }
