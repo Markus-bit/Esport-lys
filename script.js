@@ -70,6 +70,9 @@ wheelPicker.on('input:end', function(color) {
   xhr.send(JSON.stringify(data));
   // log the current color as a hsl string
   //console.log(color.hsl.h);
+
+
+  
 });
 function setup(){
   console.log("hi")

@@ -47,7 +47,7 @@ h3{
 }
 
 .range-wrap {
-    position: absolute;
+    position: relative;
     width: 100%;
     padding: 1.5em 0; /*  Giving more room for hover  */
     max-width: 300px;
