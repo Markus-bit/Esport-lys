@@ -6,3 +6,4 @@ function openNav() {
     document.getElementById("box").style.display = "none";
   }
   //setter widthen til "mySideNav" objektet til 0 slik at man ikke ser det lenger
+

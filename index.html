@@ -26,16 +26,14 @@
     <button onclick="lightPolice()">Police</button>
     <button onclick="lightIdNone()">none</button>
     <button onclick="lightIdAll()">all</button>
-    <button onclick="lightId1()">Id 1</button>
-    <button onclick="lightId2()">Id 2</button>
+
     
     <!--
     <button onclick="lightId3()">Id 3</button>
     <button onclick="lightId4()">Id 4</button>
     --> 
     <button onclick="lightId5()">Id 5</button>
-    <button onclick="lightId6()">Id 6</button>
-    <button onclick="lightId7()">Id 7</button>
+
 
     <button onclick="openNav()">farge</button>
 
@@ -77,12 +75,12 @@
     <script src="script.js"></script>
    
 
-<img id="layout" src="Esport-layout.png">
+<img id="layout" src="Untitled_Artwork.png">
 
-
-
-
-
+<div id="bildeKnappId1" onclick="lightId1(); openNav();"></div>
+<div id="bildeKnappId2" onclick="lightId2(); openNav();"></div>
+<div id="bildeKnappId3" onclick="lightId3(); openNav();"></div>
+<div id="bildeKnappId4" onclick="lightId4(); openNav();"></div>
 
 
 <div id="box">
@@ -90,17 +88,14 @@
       <div class="ColorPicker" id="wheelPicker">
         <h3>BIG WHEEL</h3>
       </div>
-        <div class="ColorPicker" id="kelvinPicker">
-          <h3>TEMPERATURE SLIDER</h3>
-        </div>
-
+      <div class="range-wrap">
+        <input id="ctSlider" onchange="lightCt()" type="range" class="range" min="153" max="500">
+        <output class="bubble"></output>
+      </div>
       </div>
     </div>
   </div>
-  <div class="range-wrap">
-    <input id="ctSlider" onchange="lightCt()" type="range" class="range" min="153" max="500">
-    <output class="bubble"></output>
-  </div>
+  
 </body>
 
 
