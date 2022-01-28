@@ -84,7 +84,43 @@ function lightId2(){
     }
 
     
+
 function lightId3(){
+var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
+
+var xhr = new XMLHttpRequest();
+xhr.open("PUT", url);
+
+xhr.setRequestHeader("Content-Type", "application/json");
+
+xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+        console.log(xhr.status);
+        console.log(xhr.responseText);
+}};
+
+const index = lightIds.indexOf("\"5\"");
+if (index > -1) {
+lightIds.splice(index, 1);
+} else{
+    lightIds.push("\"5\"")
+}
+console.log(lightIds); 
+
+let text = lightIds.toString();
+console.log(text);
+
+var dataString = "{\"lights\":[" +text+ "]}"
+
+console.log(dataString)
+
+xhr.send(dataString);
+
+
+}
+
+
+function lightId4(){
     var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
 
     var xhr = new XMLHttpRequest();
@@ -114,40 +150,10 @@ function lightId3(){
     console.log(dataString)
 
     xhr.send(dataString);
-}
 
-
-function lightId4(){
-    var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
-
-    var xhr = new XMLHttpRequest();
-    xhr.open("PUT", url);
-
-    xhr.setRequestHeader("Content-Type", "application/json");
-
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            console.log(xhr.status);
-            console.log(xhr.responseText);
-    }};
-
-    const index = lightIds.indexOf("\"5\"");
-    if (index > -1) {
-    lightIds.splice(index, 1);
-    } else{
-        lightIds.push("\"5\"")
+    
     }
-    console.log(lightIds); 
 
-    let text = lightIds.toString();
-    console.log(text);
-
-    var dataString = "{\"lights\":[" +text+ "]}"
-
-    console.log(dataString)
-
-    xhr.send(dataString);
-}
 
 function lightId5(){
     var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
