@@ -98,11 +98,11 @@ function lightId2(){
                 console.log(xhr.responseText);
         }};
     
-        const index = lightIds.indexOf("\"6\"");
+        const index = lightIds.indexOf("\"5\"");
         if (index > -1) {
         lightIds.splice(index, 1);
         } else{
-            lightIds.push("\"6\"")
+            lightIds.push("\"5\"")
         }
         console.log(lightIds); 
     
@@ -133,11 +133,11 @@ function lightId2(){
                     console.log(xhr.responseText);
             }};
         
-            const index = lightIds.indexOf("\"5\"");
+            const index = lightIds.indexOf("\"6\"");
             if (index > -1) {
             lightIds.splice(index, 1);
             } else{
-                lightIds.push("\"5\"")
+                lightIds.push("\"6\"")
             }
             console.log(lightIds); 
         
@@ -230,6 +230,14 @@ function lightId2(){
     const id5 = lightIds.indexOf("\"5\"");
     if (id5 == -1) {
         lightIds.push("\"5\"")
+    }
+    const id6 = lightIds.indexOf("\"6\"");
+    if (id6 == -1) {
+        lightIds.push("\"6\"")
+    }
+    const id7 = lightIds.indexOf("\"7\"");
+    if (id7 == -1) {
+        lightIds.push("\"7\"")
     }
  
 
