@@ -12,13 +12,12 @@
     const lightIds = [];
     console.log(lightIds);
 
-    
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
 </head>
 
-    <body onload="lightIdNone();">
-    
+    <body onload="lightIdNone(), setup();">
+   
     <button onclick="turnOnLight(true)">On</button>
     <button onclick="turnOnLight(false)">Off</button>
     <button onclick="lightBlink()">Blink</button>
@@ -32,7 +31,7 @@
     <!--
     <button onclick="lightId3()">Id 3</button>
     <button onclick="lightId4()">Id 4</button>
-    -->
+    --> 
     <button onclick="lightId5()">Id 5</button>
 
 
@@ -45,7 +44,7 @@
     
     <input id="briSlider" onchange="lightBri()"type="range" min="0" max="254" value="254" class="slider">
     <input id="satSlider" onchange="lightSat()"type="range" min="0" max="254" value="254" class="slider">
-    <input id="ctSlider" onchange="lightCt()"type="range" min="153" max="500" value="327" class="slider">
+    <input type="range" min="153" max="500" value="327" class="slider">
     
  
  
@@ -89,14 +88,14 @@
       <div class="ColorPicker" id="wheelPicker">
         <h3>BIG WHEEL</h3>
       </div>
-        <div class="ColorPicker" id="kelvinPicker">
-          <h3>TEMPERATURE SLIDER</h3>
-        </div>
-
+      <div class="range-wrap">
+        <input id="ctSlider" onchange="lightCt()" type="range" class="range" min="153" max="500">
+        <output class="bubble"></output>
+      </div>
       </div>
     </div>
   </div>
-
+  
 </body>
 
 
