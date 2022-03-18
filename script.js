@@ -88,7 +88,6 @@ wheelPicker.on('input:end', function(color) {
  * range element that will run the setBubble function when the range element is changed
  */
 function setup(){
-  console.log("hi")
   const allRanges = document.querySelectorAll(".range-wrap");
   allRanges.forEach((wrap) => {
     const range = wrap.querySelector(".range");

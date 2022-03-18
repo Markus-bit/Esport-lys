@@ -1,5 +1,7 @@
 
-function lightId1(){
+
+function connectAPI(){
+    console.log("hei")
     var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
 
     var xhr = new XMLHttpRequest();
@@ -13,297 +15,94 @@ function lightId1(){
             console.log(xhr.responseText);
     }};
 
-    const id1 = lightIds.indexOf("\"1\"");
-    if (id1 == -1) {
-        lightIds.push("\"1\"");
-    }
-    else{
-        lightIds.splice(id1, 1);
-    }
-    const id2 = lightIds.indexOf("\"2\"");
-    if (id2 == -1) {
-        lightIds.push("\"2\"");
-    }
-    else{
-        lightIds.splice(id2, 1);
-    }
+    return xhr;
+}
+function sendData(xhr){
     console.log(lightIds); 
 
     let text = lightIds.toString();
     console.log(text);
-    
+
     var dataString = "{\"lights\":[" +text+ "]}"
 
     console.log(dataString)
 
     xhr.send(dataString);
+}
 
-    
+function lightselect(id){
+    const index = lightIds.indexOf('"' + id + '"');
+    if (index == -1) {
+        lightIds.push('"' + id + '"');
+    }
+    else{
+        lightIds.splice(index, 1);
+    }
+}
+
+function lightId1(){
+    var xhr = connectAPI()
+
+    lightselect(1)
+    lightselect(2)
+
+    sendData(xhr)
     }
 
 function lightId2(){
-    var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
+    var xhr = connectAPI()
 
-    var xhr = new XMLHttpRequest();
-    xhr.open("PUT", url);
+    lightselect(3)
+    lightselect(4)
 
-    xhr.setRequestHeader("Content-Type", "application/json");
-
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            console.log(xhr.status);
-            console.log(xhr.responseText);
-    }};
-
-    const id3 = lightIds.indexOf("\"3\"");
-    if (id3 == -1) {
-        lightIds.push("\"3\"");
-    }
-    else{
-        lightIds.splice(id3, 1);
-    }
-    const id4 = lightIds.indexOf("\"4\"");
-    if (id4 == -1) {
-        lightIds.push("\"4\"");
-    }
-    else{
-        lightIds.splice(id4, 1);
-    }
-    console.log(lightIds); 
-
-    let text = lightIds.toString();
-    console.log(text);
-
-    var dataString = "{\"lights\":[" +text+ "]}"
-
-    console.log(dataString)
-
-    xhr.send(dataString);
-
-    
-    }
-
-    
+    sendData(xhr)
+}
 
 function lightId3(){
-var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
+    var xhr = connectAPI()
 
-var xhr = new XMLHttpRequest();
-xhr.open("PUT", url);
-
-xhr.setRequestHeader("Content-Type", "application/json");
-
-xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4) {
-        console.log(xhr.status);
-        console.log(xhr.responseText);
-}};
-
-const index = lightIds.indexOf("\"5\"");
-if (index > -1) {
-lightIds.splice(index, 1);
-} else{
-    lightIds.push("\"5\"")
+    lightselect(5)
+   
+    sendData(xhr)
 }
-console.log(lightIds); 
-
-let text = lightIds.toString();
-console.log(text);
-
-var dataString = "{\"lights\":[" +text+ "]}"
-
-console.log(dataString)
-
-xhr.send(dataString);
-
-
-}
-
 
 function lightId4(){
-    var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
+    var xhr = connectAPI()
 
-    var xhr = new XMLHttpRequest();
-    xhr.open("PUT", url);
+   lightselect(6)
 
-    xhr.setRequestHeader("Content-Type", "application/json");
-
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            console.log(xhr.status);
-            console.log(xhr.responseText);
-    }};
-
-    const index = lightIds.indexOf("\"6\"");
-    if (index > -1) {
-    lightIds.splice(index, 1);
-    } else{
-        lightIds.push("\"6\"")
-    }
-    console.log(lightIds); 
-
-    let text = lightIds.toString();
-    console.log(text);
-
-    var dataString = "{\"lights\":[" +text+ "]}"
-
-    console.log(dataString)
-
-    xhr.send(dataString);
-
-    
-    }
-
-
-function lightId5(){
-    var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
-
-    var xhr = new XMLHttpRequest();
-    xhr.open("PUT", url);
-
-    xhr.setRequestHeader("Content-Type", "application/json");
-
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            console.log(xhr.status);
-            console.log(xhr.responseText);
-    }};
-
-    const index = lightIds.indexOf("\"7\"");
-    if (index > -1) {
-    lightIds.splice(index, 1);
-    } else{
-        lightIds.push("\"7\"")
-    }
-    console.log(lightIds); 
-
-    let text = lightIds.toString();
-    console.log(text);
-
-    var dataString = "{\"lights\":[" +text+ "]}"
-
-    console.log(dataString)
-
-    xhr.send(dataString);
-
-
+    sendData(xhr)
 }
 
-                        
+function lightId5(){
+    var xhr = connectAPI()
 
+    lightselect(7)
 
-
-            
+    sendData(xhr)
+} 
 
 function lightIdAll(){
-    console.log("hei")
-    var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
-
-    var xhr = new XMLHttpRequest();
-    xhr.open("PUT", url);
-
-    xhr.setRequestHeader("Content-Type", "application/json");
-
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            console.log(xhr.status);
-            console.log(xhr.responseText);
-    }};
-
-    const id1 = lightIds.indexOf("\"1\"");
-    if (id1 == -1) {
-        lightIds.push("\"1\"")
+    var xhr = connectAPI()
+    let id = new Array(7)
+    for(i = 1; i <= 7; i++) {
+        id[i-1] = lightIds.indexOf('"' + i + '"');
+        if (id[i-1] == -1) {
+            lightIds.push('"' + i + '"')
+        }
     }
-    const id2 = lightIds.indexOf("\"2\"");
-    if (id2 == -1) {
-        lightIds.push("\"2\"")
-    }
-    const id3 = lightIds.indexOf("\"3\"");
-    if (id3 == -1) {
-        lightIds.push("\"3\"")
-    }
-    const id4 = lightIds.indexOf("\"4\"");
-    if (id4 == -1) {
-        lightIds.push("\"4\"")
-    }
-    const id5 = lightIds.indexOf("\"5\"");
-    if (id5 == -1) {
-        lightIds.push("\"5\"")
-    }
-    const id6 = lightIds.indexOf("\"6\"");
-    if (id6 == -1) {
-        lightIds.push("\"6\"")
-    }
-    const id7 = lightIds.indexOf("\"7\"");
-    if (id7 == -1) {
-        lightIds.push("\"7\"")
-    }
-
-    console.log(lightIds); 
-
-    let text = lightIds.toString();
-    console.log(text);
-
-    var dataString = "{\"lights\":[" +text+ "]}"
-
-    console.log(dataString)
-
-    xhr.send(dataString);
+    sendData(xhr)
 }
 
 function lightIdNone(){
-    console.log("hei")
-    var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
-
-    var xhr = new XMLHttpRequest();
-    xhr.open("PUT", url);
-
-    xhr.setRequestHeader("Content-Type", "application/json");
-
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            console.log(xhr.status);
-            console.log(xhr.responseText);
-    }};
-
-    const idNone1 = lightIds.indexOf("\"1\"");
-    if (idNone1 > -1) {
-        lightIds.splice(idNone1,1)
+    var xhr = connectAPI()
+    let idNone = new Array(7)
+    for(i = 1; i <= 7; i++) {
+        idNone[i-1] = lightIds.indexOf('"' + i + '"');
+        if (idNone[i-1] > -1) {
+            lightIds.splice(idNone[i-1],1)
+         }
     }
-    const idNone2 = lightIds.indexOf("\"2\"");
-    if (idNone2 > -1) {
-        lightIds.splice(idNone2, 1)
-    }
-    const idNone3 = lightIds.indexOf("\"3\"");
-    if (idNone3 > -1) {
-        lightIds.splice(idNone3, 1)
-    }
-    const idNone4 = lightIds.indexOf("\"4\"");
-    if (idNone4 > -1) {
-        lightIds.splice(idNone4, 1)
-    }
-    const idNone5 = lightIds.indexOf("\"5\"");
-    if (idNone5 > -1) {
-        lightIds.splice(idNone5, 1)
-    }
-    const idNone6 = lightIds.indexOf("\"6\"");
-    if (idNone6 > -1) {
-        lightIds.splice(idNone6, 1)
-    }
-    const idNone7 = lightIds.indexOf("\"7\"");
-    if (idNone7 > -1) {
-        lightIds.splice(idNone7, 1)
-    }
-
-
-    console.log(lightIds); 
-
-    let none = lightIds.toString();
-    console.log(none);
-
-    var dataString = "{\"lights\":[" +none+ "]}"
-
-    console.log(dataString)
-
-    xhr.send(dataString);
+    sendData(xhr)
  }
+
