@@ -72,7 +72,6 @@ wheelPicker.on('input:end', function(color) {
   //console.log(color.hsl.h);
 });
 function setup(){
-  console.log("hi")
   const allRanges = document.querySelectorAll(".range-wrap");
   allRanges.forEach((wrap) => {
     const range = wrap.querySelector(".range");
