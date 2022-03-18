@@ -1,5 +1,9 @@
 
 
+/**
+ * It connects to the API and sends a PUT request to the API
+ * @returns The xhr object.
+ */
 function connectAPI(){
     console.log("hei")
     var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
@@ -17,6 +21,10 @@ function connectAPI(){
 
     return xhr;
 }
+/**
+ * Send the lightIds array as a string to the server
+ * @param xhr - the XMLHttpRequest object that we created earlier
+ */
 function sendData(xhr){
     console.log(lightIds); 
 
@@ -30,6 +38,11 @@ function sendData(xhr){
     xhr.send(dataString);
 }
 
+/**
+ * Given a light ID, add it to the list of selected lights if it's not already there, otherwise remove
+ * it
+ * @param id - The id of the light you want to control.
+ */
 function lightselect(id){
     const index = lightIds.indexOf('"' + id + '"');
     if (index == -1) {
@@ -40,6 +53,9 @@ function lightselect(id){
     }
 }
 
+/**
+ * This function is used to turn on the lights with id 3 and 4
+ */
 function lightId1(){
     var xhr = connectAPI()
 
@@ -49,6 +65,9 @@ function lightId1(){
     sendData(xhr)
     }
 
+/**
+ * This function is used to turn on the lights with id 3 and 4
+ */
 function lightId2(){
     var xhr = connectAPI()
 
@@ -58,6 +77,9 @@ function lightId2(){
     sendData(xhr)
 }
 
+/**
+ * This function is used to send a request to the API to turn on the light with the id of 5
+ */
 function lightId3(){
     var xhr = connectAPI()
 
@@ -65,6 +87,9 @@ function lightId3(){
    
     sendData(xhr)
 }
+/**
+ * This function is used to turn on the light with id 6
+ */
 
 function lightId4(){
     var xhr = connectAPI()
@@ -74,6 +99,9 @@ function lightId4(){
     sendData(xhr)
 }
 
+/**
+ * This function is used to turn on the light with id 7
+ */
 function lightId5(){
     var xhr = connectAPI()
 
@@ -81,6 +109,9 @@ function lightId5(){
 
     sendData(xhr)
 } 
+/**
+ * This function is used to add all the light IDs to the lightIds array
+ */
 
 function lightIdAll(){
     var xhr = connectAPI()
@@ -94,6 +125,9 @@ function lightIdAll(){
     sendData(xhr)
 }
 
+/**
+ * This function is used to remove the light ID's from the array.
+ */
 function lightIdNone(){
     var xhr = connectAPI()
     let idNone = new Array(7)
