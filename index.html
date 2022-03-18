@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.scss">
     <script>    
+/** This is a way to make sure that the lightIds array is empty. **/
     const lightIds = [];
     console.log(lightIds);
 
@@ -16,8 +17,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
 </head>
 
+
     <body onload="lightIdNone(), setup();">
    
+    <!-- Calling the function `turnOnLight(true)` -->
     <button onclick="turnOnLight(true)">On</button>
     <button onclick="turnOnLight(false)">Off</button>
     <button onclick="lightBlink()">Blink</button>
@@ -26,12 +29,8 @@
     <button onclick="lightPolice()">Police</button>
     <button onclick="lightIdNone()">none</button>
     <button onclick="lightIdAll()">all</button>
-
-    
-    <!--
     <button onclick="lightId3()">Id 3</button>
     <button onclick="lightId4()">Id 4</button>
-    --> 
     <button onclick="lightId5()">Id 5</button>
 
 

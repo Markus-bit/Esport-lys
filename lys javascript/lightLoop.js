@@ -1,3 +1,7 @@
+/**
+ * It sends a PUT request to the URL, which is the Hue Bridge. The request is sent in JSON format.
+ * @param effect - The type of effect to be applied to the light.
+ */
 function lightLoop(effect){
     var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1/action";
 

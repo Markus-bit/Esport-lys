@@ -1,3 +1,8 @@
+/**
+ * It sends a PUT request to the URL
+ * "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1/action" with the body of
+ * the JSON object {"ct": parseInt(slider.value)}
+ */
 function lightCt(){
     var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1/action";
 

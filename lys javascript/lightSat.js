@@ -1,3 +1,6 @@
+/**
+ * It takes the slider value and sends it to the Hue Bridge
+ */
 function lightSat(){
     var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1/action";
 

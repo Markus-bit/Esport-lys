@@ -1,3 +1,7 @@
+/**
+ * It turns on the light.
+ * @param on - true or false
+ */
 function turnOnLight(on){
     var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1/action";
 

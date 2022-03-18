@@ -1,3 +1,6 @@
+/**
+ * The function opens the side navigation bar
+ */
 function openNav() {
     document.getElementById("box").style.display = "block";
   }
