@@ -1,12 +1,11 @@
 
-
 /**
  * It connects to the API and sends a PUT request to the API
  * @returns The xhr object.
  */
 function connectAPI(){
     console.log("hei")
-    var url = "http://10.58.177.121/api/qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI/groups/1";
+    var url = 'http://'+IP+'/api/' + user + '/groups/1';
 
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", url);
