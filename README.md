@@ -43,4 +43,4 @@ please let me know at: majoa006@osloskolen.no
 
 ## License
 
-[MIT](https://github.com/sprett/bakkasport-v3/blob/add-license-1/LICENSE)
+[MIT](https://github.com/Markus-bit/Esport-lys/blob/main/LICENSE)
