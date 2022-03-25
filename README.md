@@ -20,7 +20,7 @@ This project is used by the following team(s):
 ## Feedback
 
 If you have any feedback or questions, 
-please let me know at: majoa006@osloskolen.no
+please let us know at: majoa006@osloskolen.no,
 
 
 ## License
