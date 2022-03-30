@@ -1,8 +1,30 @@
-# Esport-lys
+# E-Sport Lightsystem
 
-Dette er en nettside som vil bli brukt for å styre LED-lysene på E-sport rommet
+Light configuration website for the E-sport room
 
 
-laget av Markus, Kardo og JARAND (og Madde)
+## Used By
 
-test
+This project is used by the following team(s):
+
+- E-sport Elvebakken
+
+
+## Web preview
+
+![App Screenshot](https://cdn.discordapp.com/attachments/903758836110868551/956163449526829066/Skjermbilde_2022-03-23_kl._13.11.45.png)
+
+
+
+
+## Feedback
+
+If you have any feedback or questions, 
+please let us know at: 
+- majoa006@osloskolen.no
+- kaala003@osloskolen.no
+- jasea001@osloskolen.no
+
+## License
+
+This repository is published under the [MIT](https://github.com/Markus-bit/Esport-lys/blob/main/LICENSE) license.

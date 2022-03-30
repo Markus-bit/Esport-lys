@@ -39,17 +39,24 @@ h3{
 
 
 #box{
+    border-radius: 5%;
     background-color: blue;
     width:350px;
+    height:400px;
     position: absolute;
     top:200px;
     display: none;
 }
 
+#wheelPicker{
+position: absolute;
+left:25px;
+
+}
 .range-wrap {
     position: relative;
     width: 100%;
-    padding: 1.5em 0; /*  Giving more room for hover  */
+    padding: 2em 0; /*  Giving more room for hover  */
     max-width: 300px;
   }
   
@@ -112,7 +119,7 @@ h3{
     left:425px;
     position: absolute;
     cursor: pointer;
-    background-color: red;
+
 }
 
 
@@ -124,7 +131,7 @@ h3{
     left:425px;
     position: absolute;
     cursor: pointer;
-    background-color: blue;
+  
 }
 
 #bildeKnappId3{
@@ -135,7 +142,7 @@ h3{
     left:790px;
     position: absolute;
     cursor: pointer;
-    background-color: green;
+ 
 }
 
 #bildeKnappId4{
@@ -146,5 +153,6 @@ h3{
     left:790px;
     position: absolute;
     cursor: pointer;
-    background-color: yellow;
+
 }
+
