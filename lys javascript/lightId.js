@@ -5,7 +5,7 @@
  */
 function connectAPI(){
     console.log("hei")
-    var url = 'http://'+IP+'/api/' + user + '/groups/1';
+    var url = 'http://' + IP + '/api/' + user + '/groups/1';
 
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", url);
