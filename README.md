@@ -9,6 +9,15 @@ This project is used by the following team(s):
 
 - E-sport Elvebakken
 
+## Setup
+To set up and debug the philips hue bridge, please refer to the philips hue developer program
+
+ https://developers.meethue.com/develop/get-started-2/
+
+Get to know the philips hue api used in this project 
+
+ https://developers.meethue.com/develop/hue-api/
+
 
 ## Web preview
 

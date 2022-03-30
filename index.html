@@ -14,11 +14,14 @@
 /** This is a way to make sure that the lightIds array is empty. **/
     const lightIds = [];
     console.log(lightIds);
+    /** make variables for IP and user. This makes changing variables easier. **/
+    /** In the future put this on a server for added security **/
     const IP = "10.58.177.121"
     const user = "qMqjGkkf5rQBm8CDoKczf2GDVvwBX93U3ya0AKsI"
    
 
     </script>
+    <!-- importing library for the color weel. -->
     <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
 </head>
 
@@ -35,9 +38,15 @@
     <button class="btn btn-primary" onclick="lightPolice()">Police</button>
     <button class="btn btn-primary" onclick="lightIdNone()">none</button>
     <button class="btn btn-primary" onclick="lightIdAll()">all</button>
+    
+    <!-- Calling the function `lightID1 - 5` clicking them all will enable all lights-->
+    <button class="btn btn-primary" onclick="lightId1()">Id 1</button>
+    <button class="btn btn-primary" onclick="lightId2()">Id 2</button>
     <button class="btn btn-primary" onclick="lightId3()">Id 3</button>
     <button class="btn btn-primary" onclick="lightId4()">Id 4</button>
     <button class="btn btn-primary" onclick="lightId5()">Id 5</button>
+
+    <!--click to enable the colorweel-->
     <button class="btn btn-primary" onclick="openNav()">farge</button>
 
 
@@ -46,6 +55,7 @@
         <span class="slider round"></span>
       </label>
     
+    <!--Sliders for brightness and saturation, saturation is also a part of the colorweel-->
     <input id="briSlider" onchange="lightBri()"type="range" min="0" max="254" value="254" class="slider">
     <input id="satSlider" onchange="lightSat()"type="range" min="0" max="254" value="254" class="slider">
     <input type="range" min="153" max="500" value="327" class="slider">
@@ -54,7 +64,7 @@
  
 
     
-
+    
     <div id="colorSpec" style="opacity: 0;">
         <input id="hueSlider" onchange="lightHue()" type="range" min="0" max="65535" value="30000">
         <input id="mySlider2" type="range" step="1" min="100" max="100" value="100" style="display: none;">
@@ -65,7 +75,7 @@
 
       
 
-
+    <!--importing the javascript files-->
     <script src="/lys javascript/lightHandler.js"></script>
     <script src="/lys javascript/lightBlink.js"></script>
     <script src="/lys javascript/lightBri.js"></script>
@@ -81,12 +91,13 @@
 
 <img id="layout" src="images/Untitled_Artwork.png">
 
+<!--enables clicking the picture to enable and disable their respectable parts-->
 <div id="bildeKnappId1" onclick="lightId1(); openNav();"></div>
 <div id="bildeKnappId2" onclick="lightId2(); openNav();"></div>
 <div id="bildeKnappId3" onclick="lightId3(); openNav();"></div>
 <div id="bildeKnappId4" onclick="lightId4(); openNav();"></div>
 
-
+<!--colorweel-->
 <div id="box">
     <div class="Wrap">
       <div class="ColorPicker" id="wheelPicker">
