@@ -1,6 +1,6 @@
 # E-Sport Lightsystem
 
-Light configuration website for the E-sport room
+Light configuration website for the E-sport room at Elvebakken VGS
 
 
 ## Used By
@@ -21,18 +21,22 @@ Get to know the philips hue api used in this project
 
 ## Web preview
 
-![App Screenshot](https://cdn.discordapp.com/attachments/903758836110868551/956163449526829066/Skjermbilde_2022-03-23_kl._13.11.45.png)
+![App Screenshot](images/Screenshot_2022-02-11_at_15.36.48.png)
 
 
+
+
+## Room preview
+![App Screenshot](images/20220128_152940.jpg)
 
 
 ## Feedback
 
 If you have any feedback or questions, 
 please let us know at: 
-- majoa006@osloskolen.no
-- kaala003@osloskolen.no
-- jasea001@osloskolen.no
+- majoa006@osloskolen.no(Outdated)
+- kaala003@osloskolen.no(Outdated)
+- jasea001@osloskolen.no(Outdated)
 
 ## License
 
